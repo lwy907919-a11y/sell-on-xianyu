@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>闲鱼数字产品变现 · AI 打造被动收入 · AI 赚钱工具包</title>
+<meta name="description" content="在闲鱼卖数字产品（模板/教程/素材），用 AI 把你的知识变成被动收入。0基础可上手。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',PingFangSC,sans-serif;color:#1a1a1a;background:#fff}
+.hero{background:linear-gradient(135deg,#c2410c,#fb923c);color:#fff;padding:60px 20px;text-align:center}
+.hero h1{font-size:2.4rem;font-weight:800;margin-bottom:16px;line-height:1.3}
+.hero p{font-size:1.15rem;opacity:0.92;max-width:600px;margin:0 auto 32px}
+.cta-btn{display:inline-block;background:#fed7aa;color:#1a1a1a;padding:14px 32px;border-radius:8px;font-size:1.1rem;font-weight:700;text-decoration:none;transition:transform .15s}
+.cta-btn:hover{transform:scale(1.04)}
+.demo-section{background:#fff7ed;padding:48px 20px;text-align:center}
+.demo-label{font-size:.85rem;color:#c2410c;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:24px}
+.demo-box{background:#fff;border-radius:16px;max-width:560px;margin:0 auto;box-shadow:0 4px 24px rgba(0,0,0,.08);overflow:hidden}
+.demo-header{display:flex;align-items:center;gap:10px;padding:14px 18px;background:#f5f5f5;border-bottom:1px solid #e5e5e5}
+.demo-dot{width:12px;height:12px;border-radius:50%}
+.demo-title{font-size:.85rem;color:#666;margin-left:auto;margin-right:auto}
+.chat-msg{padding:12px 18px;text-align:left;font-size:.9rem;line-height:1.6}
+.chat-user{background:#ffedd5;color:#9a3412;margin:8px 12px 4px;border-radius:12px 12px 12px 4px;padding:10px 14px}
+.chat-ai{background:#f5f5f5;color:#333;margin:4px 12px 8px;border-radius:12px 12px 4px 12px;padding:10px 14px}
+.features{padding:56px 20px;max-width:900px;margin:0 auto}
+.features h2{font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#fff;border:2px solid #f0f0f0;border-radius:16px;padding:28px;transition:box-shadow .2s}
+.card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08)}
+.card-icon{font-size:2rem;margin-bottom:14px}
+.card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.card p{font-size:.88rem;color:#666;line-height:1.6}
+.badge{display:inline-block;background:#fff7ed;color:#c2410c;padding:2px 10px;border-radius:20px;font-size:.75rem;font-weight:600;margin-bottom:10px}
+.comparison{padding:56px 20px;background:#fafafa}
+.comparison h2{font-size:1.8rem;font-weight:800;text-align:center;margin-bottom:40px}
+.compare-grid{max-width:700px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.compare-before{background:#fff;border:2px solid #fdba74;border-radius:16px;padding:28px;text-align:center}
+.compare-after{background:#fff;border:2px solid #86efac;border-radius:16px;padding:28px;text-align:center}
+.compare-before h3{color:#ea580c;margin-bottom:20px;font-size:1.1rem}
+.compare-after h3{color:#16a34a;margin-bottom:20px;font-size:1.1rem}
+.compare-before ul,.compare-after ul{list-style:none;text-align:left;font-size:.88rem;line-height:2}
+.compare-before li::before{content:'✗ ';color:#ea580c;font-weight:700}
+.compare-after li::before{content:'✓ ';color:#16a34a;font-weight:700}
+.pricing{padding:56px 20px;text-align:center;background:linear-gradient(180deg,#fff,#fff7ed)}
+.pricing h2{font-size:1.8rem;font-weight:800;margin-bottom:8px}
+.pricing .sub{color:#888;margin-bottom:32px;font-size:.95rem}
+.price-box{display:inline-block;background:#fff;border:2px solid #fb923c;border-radius:16px;padding:32px 48px;box-shadow:0 4px 24px rgba(251,146,60,.12)}
+.price-old{font-size:.9rem;color:#999;text-decoration:line-through}
+.price-new{font-size:3rem;font-weight:800;color:#c2410c}
+.price-new span{font-size:1rem;color:#666;font-weight:400}
+.price-note{font-size:.8rem;color:#888;margin-top:8px}
+.payment{padding:40px 20px;max-width:600px;margin:0 auto;text-align:center}
+.payment h3{font-size:1rem;font-weight:700;color:#888;margin-bottom:20px;letter-spacing:1px}
+.payment-grid{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pay-btn{display:inline-block;padding:10px 20px;background:#f5f5f5;border-radius:8px;font-size:.88rem;color:#333;text-decoration:none;font-weight:500}
+.pay-btn:hover{background:#e5e5e5}
+footer{background:#1a1a1a;color:#888;text-align:center;padding:24px;font-size:.8rem}
+footer a{color:#aaa;text-decoration:none}
+.emoji-row{font-size:1.4rem;margin-bottom:12px}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="emoji-row">🐟💰</div>
+  <h1>"我闲鱼挂了教程没人买，<br>用 AI 能帮我卖出去吗？"</h1>
+  <p>数字产品（模板/教程/素材）卖一次赚一次，躺着也有收入。<br>AI 帮你找选题、写标题、自动客服，0基础也能做起来。</p>
+  <a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/wizard.html" class="cta-btn">🐟 立即体验 AI 向导 →</a>
+</section>
+
+<section class="demo-section">
+  <div class="demo-label">真实 AI 对话演示 · 闲鱼变现场景</div>
+  <div class="demo-box">
+    <div class="demo-header">
+      <span class="demo-dot" style="background:#fb923c"></span>
+      <span class="demo-dot" style="background:#fbbf24"></span>
+      <span class="demo-dot" style="background:#22c55e"></span>
+      <span class="demo-title">🐟 闲鱼变现 AI 向导</span>
+    </div>
+    <div class="chat-msg">
+      <div class="chat-user">我想在闲鱼卖数字产品，有什么比较好卖的方向？我现在没有什么资源。</div>
+      <div class="chat-ai"><strong>新手最容易出单的3个方向，AI 帮你分析：</strong><br><br>① <strong>简历模板</strong> — 打工人需求大，出价 ¥9-29，自动发货零售后，用 AI 帮你批量生成多行业模板<br>② <strong>小红书图文素材包</strong> — 博主刚需，¥19-49，AI 生成模板，出单后自动发货<br>③ <strong>考证资料包</strong> — 法考/教资/CPA备考资料，需求稳定，¥29-99<br><br>我来帮你<strong>选最适合你的方向 + 定标题 + 写描述文案</strong>。先想好你有什么积累（工作技能/考试经验/兴趣爱好），回复「1」继续。</div>
+    </div>
+  </div>
+  <div style="margin-top:24px">
+    <a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/wizard.html" class="cta-btn">🐟 我也说一句话，让 AI 给我出方案 →</a>
+  </div>
+</section>
+
+<section class="features">
+  <h2>闲鱼数字变现，AI 帮你做什么</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="badge">🔥 爆款标题</div>
+      <div class="card-icon">📝</div>
+      <h3>AI 批量生成标题</h3>
+      <p>输入你的产品，AI 给你 20 个高点击率标题选项。不用自己想，直接选最优的用。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📦</div>
+      <h3>产品包批量生产</h3>
+      <p>用 AI 批量生成简历模板/小红书素材/文案包，一套产品只需做一次，卖 N 次。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">💬</div>
+      <h3>自动客服回复</h3>
+      <p>"发给我了吗""能便宜点吗"，AI 自动回复常见问题，省下大量时间做新品。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <h3>数据分析与选品</h3>
+      <p>AI 分析闲鱼哪些品类出单快、竞争少，帮你选蓝海产品，少走弯路。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📱</div>
+      <h3>多平台同步发布</h3>
+      <p>闲鱼+转转+小红书店铺，同一产品 AI 帮你适配不同平台文案，一份产品多渠道卖。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤖</div>
+      <h3>自动发货系统</h3>
+      <p>客户付款后 AI 自动发货，无需手动操作。24小时在线，睡后收入。</p>
+    </div>
+  </div>
+</section>
+
+<section class="comparison">
+  <h2>闲鱼卖家的真实改变</h2>
+  <div class="compare-grid">
+    <div class="compare-before">
+      <h3>❌ 以前没有 AI</h3>
+      <ul>
+        <li>产品挂了没人买，不知道为什么</li>
+        <li>标题想了半天还是没点击</li>
+        <li>客户问了10个问题只回复3个</li>
+        <li>不知道卖什么产品好</li>
+        <li>手动发货累死人</li>
+      </ul>
+    </div>
+    <div class="compare-after">
+      <h3>✅ 有了 AI 工具包</h3>
+      <ul>
+        <li>AI 给高点击率标题，曝光量翻倍</li>
+        <li>20个标题方案，直接选最优</li>
+        <li>AI 客服秒回，不漏一单</li>
+        <li>AI 分析蓝海品类，不盲目上架</li>
+        <li>自动发货，躺着也赚钱</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>🐟 已出单的卖家怎么说</h2>
+  <p class="sub">数字代表个人结果，不保证相同收益</p>
+  <div class="grid" style="max-width:800px;margin:0 auto">
+    <div class="card" style="text-align:left">
+      <p style="font-size:1rem;color:#333;margin-bottom:12px;font-style:italic">"用 AI 工具包里的标题生成功能，第一周就出了8单，第二周16单。现在每月多赚 2000-3000 块。"</p>
+      <p style="font-size:.82rem;color:#888">— 小周，全职妈妈，杭州 | 兼职闲鱼</p>
+    </div>
+    <div class="card" style="text-align:left">
+      <p style="font-size:1rem;color:#333;margin-bottom:12px;font-style:italic">"做了简历模板包，AI 帮我生成了30套不同行业的模板。闲鱼上架后，每周稳定出单，不用管。"</p>
+      <p style="font-size:.82rem;color:#888">— 阿亮，应届毕业生，成都 | 副业探索中</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" style="background:#fff7ed">
+  <h2>🚀 一次付费，终身使用</h2>
+  <p class="sub">闲鱼变现 AI 工具包 · 0基础可上手</p>
+  <div class="price-box">
+    <div class="price-old">原价 ¥199</div>
+    <div class="price-new">¥29 <span>起</span></div>
+    <div class="price-note">含 5 大 AI 系统 + 终身更新 + 7-30天答疑</div>
+  </div>
+  <div style="margin-top:24px;font-size:.85rem;color:#666">
+    👆 体验 AI 向导免费，满意再付款
+  </div>
+</section>
+
+<section class="payment">
+  <h3>支 付 方 式</h3>
+  <div class="payment-grid">
+    <a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/#payment" class="pay-btn">💚 微信/支付宝</a>
+    <a href="https://afdian.com/a/hzylw" class="pay-btn">⚡ 爱发电</a>
+    <a href="https://lwy907919-a11y.lemonsqueezy.com/" class="pay-btn">💳 信用卡/借记卡</a>
+    <a href="https://paypal.me/hzylw" class="pay-btn">🅿️ PayPal</a>
+  </div>
+  <div style="margin-top:20px;font-size:.78rem;color:#aaa">
+    所有支付方式均为一次性付款，无订阅，无自动续费
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AI 赚钱工具包 · <a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/">返回主站</a></p>
+</footer>
+
+</body>
+</html>
